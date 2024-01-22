@@ -32,7 +32,7 @@ export default async function handleRequest(
   }
 
   responseHeaders.set('Content-Type', 'text/html');
-  responseHeaders.set('Content-Security-Policy', header);
+  responseHeaders.set('Content-Security-Policy', 'frame-ancestors: http://localhost:63342');
 
   return new Response(body, {
     headers: responseHeaders,
