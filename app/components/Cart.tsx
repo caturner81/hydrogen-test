@@ -35,7 +35,6 @@ function CartDetails({layout, cart}: CartMainProps) {
       {cartHasItems && (
         <CartSummary cost={cart.cost} layout={layout}>
           <CartDiscounts discountCodes={cart.discountCodes} />
-          <CartCheckoutActions checkoutUrl={cart.checkoutUrl} />
         </CartSummary>
       )}
     </div>
